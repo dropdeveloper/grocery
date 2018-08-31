@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <VideoView
+            android:id="@+id/VideoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+        </VideoView>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightBlack"
+        android:alpha="0.7">
+
+    </View>
+
+
+    <ImageView
+        android:id="@+id/logo_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/lemon"
+        android:transitionName="logo"
+        android:layout_marginLeft="45dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/mainLab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="92dp"
+        android:layout_toEndOf="@+id/logo_img"
+        android:text="Fresh Lemon"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:transitionName="label"
+        android:layout_toRightOf="@+id/logo_img" />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:padding="18dp"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:text="Login for"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="1 Hour Delivery"
+            android:layout_marginBottom="35dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Mobile number"
+            android:paddingLeft="20dp"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:inputType="phone"
+            android:textSize="22dp"
+            android:id="@+id/et_phone"
+            android:textColor="@color/TextColor"
+            android:textColorHint="@color/lightBlack"
+            android:layout_marginBottom="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_style"
+                android:text="Login"
+                android:id="@+id/bt_login"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:paddingTop="10dp"
+                />
+
+            <Button
+                android:id="@+id/bt_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Skip"
+                android:textColor="@android:color/white"
+                android:background="@null"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

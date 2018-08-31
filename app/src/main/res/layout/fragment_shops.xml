@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.ShopsFragment">
+
+   <RelativeLayout
+       android:id="@+id/rl_location"
+       android:layout_width="match_parent"
+       android:padding="5dp"
+       android:layout_margin="5dp"
+       android:layout_height="wrap_content"
+       android:background="@drawable/quantity_background_ash"
+       android:layout_marginBottom="1dp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:text="Kakanchery"
+          android:layout_toLeftOf="@+id/bt_changelocation"
+          android:drawableLeft="@drawable/ic_place"
+          android:gravity="center_vertical"
+          android:paddingLeft="2.5dp"
+          android:layout_centerVertical="true"
+          android:singleLine="true"
+          android:drawableStart="@drawable/ic_place"
+          android:layout_toStartOf="@+id/bt_changelocation"
+          android:layout_alignParentStart="true"
+          android:paddingStart="2.5dp" />
+
+      <TextView
+          android:id="@+id/bt_changelocation"
+          android:layout_width="wrap_content"
+          android:layout_height="20sp"
+          android:layout_alignParentRight="true"
+          android:background="@android:color/transparent"
+          android:text="Range : 10km"
+          android:textSize="15sp"
+          android:layout_centerVertical="true"
+          android:layout_alignParentEnd="true" />
+
+   </RelativeLayout>
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/rv_shops"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+</LinearLayout>

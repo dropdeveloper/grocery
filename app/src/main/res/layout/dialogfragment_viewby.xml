@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View By :"
+        android:padding="5dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#e2e2e2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <CheckedTextView
+        android:id="@+id/ctv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_listview_ash"
+        android:drawableStart="@drawable/ic_listview_ash"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:text="List"
+        android:textColor="#828282"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#e2e2e2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <CheckedTextView
+        android:id="@+id/ctv_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_gridview_ash"
+        android:drawableStart="@drawable/ic_gridview_ash"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:text="Grid"
+        android:textColor="#828282"/>
+
+
+</LinearLayout>

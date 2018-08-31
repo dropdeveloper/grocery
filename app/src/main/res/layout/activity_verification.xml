@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.VerificationActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <VideoView
+            android:id="@+id/VideoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+        </VideoView>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightBlack"
+        android:alpha="0.7">
+
+    </View>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="98dp"
+        android:src="@drawable/lemon"
+        android:transitionName="logo"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="34dp" />
+
+    <TextView
+        android:id="@+id/mainLab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:text="Fresh Lemon"
+        android:transitionName="label"
+        android:textColor="@android:color/white"
+        android:textSize="22dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/mainLab"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            android:text="Enter OTP for"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="27dp"
+            android:id="@+id/tv_phone"
+            android:textColor="@android:color/white"
+            android:text="+91 9645469986"
+            android:textStyle="bold"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="22dp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:id="@+id/otp_1"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:backgroundTint="@android:color/white"
+                    />
+
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="22dp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/otp_2"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:backgroundTint="@android:color/white"
+                    />
+
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="22dp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/otp_3"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:backgroundTint="@android:color/white"
+                    />
+
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="22dp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:id="@+id/otp_4"
+                    android:singleLine="true"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:backgroundTint="@android:color/white"
+                    android:layout_marginLeft="10dp"/>
+
+
+            </LinearLayout>
+
+            <!--    android:background="#8CFFFFFF"  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonBack"
+                android:background="@drawable/button_style"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RESEND"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/bt_submit"
+                    android:background="@null"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:text="By tapping on continue, you agree to the"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Terms &amp; Conditions"
+                android:textColor="#58AC50"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/bn_shops"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/bn_category"
+        android:icon="@drawable/ic_category"
+        android:title="Category"/>
+
+    <item
+        android:id="@+id/bn_deals"
+        android:icon="@drawable/ic_deals"
+        android:title="Deals"/>
+
+    <item
+        android:id="@+id/bn_messages"
+        android:icon="@drawable/ic_message"
+        android:title="Messages"/>
+
+    <item
+        android:id="@+id/bn_cart"
+        android:icon="@drawable/ic_cart"
+        android:title="Cart"/>
+</menu>
