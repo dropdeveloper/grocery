@@ -93,7 +93,7 @@ public class IntroActivity extends AppCompatActivity {
                 case 0:
                     return new IntroScreenOne();
                 case 1:
-                    return new IntroScreenTwo();
+                   // return new IntroScreenTwo();
                 case 2:
                     return new IntroScreenThree();
                 default:
