@@ -95,7 +95,7 @@ public class IntroActivity extends AppCompatActivity {
                 case 1:
                    // return new IntroScreenTwo();
                 case 2:
-                    return new IntroScreenThree();
+                  //  return new IntroScreenThree();
                 default:
                     return null;
             }
